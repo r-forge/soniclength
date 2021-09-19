@@ -1,8 +1,8 @@
 Package: sonicLength
 Type: Package
 Title: Estimating Abundance of Clones from DNA Fragmentation Data 
-Version: 1.4.6
-Date: 2019-03-04
+Version: 1.4.7
+Date: 2021-09-19
 Author: Charles Berry <ccberry@ucsd.edu>
 Maintainer: Charles Berry <ccberry@ucsd.edu>
 Depends: R (>= 2.14.0), splines

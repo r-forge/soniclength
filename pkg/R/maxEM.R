@@ -65,7 +65,8 @@ maxEM <- function(slmat, theta.var=FALSE, phi.update=NULL,
       Y <- Ey.given.x(slmat, theta.new,phi.new)
     }
     ## a little padding is needed to guard against numerical zeroes in phi 
-    phi.new <- prop.table(phi.update(Y, lframe=lframe)+iter.control$phi.min)
+    phi.new <- prop.table(phi.update(Y, lframe=lframe, glm.frm = glm.frm ) +
+                          iter.control$phi.min)
     Y <- Ey.given.x(slmat, theta.new,phi.new)
     llk <- attr(Y,'logLik')
     if (llk>llk.old){
